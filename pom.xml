@@ -6,6 +6,7 @@
 <groupId>com.questionsfor</groupId>
 <artifactId>questions-for</artifactId>
 <version>1.0-SNAPSHOT</version>
+<packaging>war</packaging>
 <name>Questions For</name>
 <url>http://maven.apache.org</url>
 
@@ -17,6 +18,7 @@
     <mockito.version>5.7.0</mockito.version>
     <spring.version>6.0.13</spring.version>
     <thymeleaf.version>3.1.2.RELEASE</thymeleaf.version>
+    <servlet.version>6.0.0</servlet.version>
 </properties>
 
 <dependencies>
@@ -73,12 +75,21 @@
         <version>${spring.version}</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring5 -->
+    <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring6 -->
     <dependency>
         <groupId>org.thymeleaf</groupId>
-        <artifactId>thymeleaf-spring5</artifactId>
+        <artifactId>thymeleaf-spring6</artifactId>
         <version>${thymeleaf.version}</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>${servlet.version}</version>
+        <scope>provided</scope>
+    </dependency>
+
 
 </dependencies>
 
